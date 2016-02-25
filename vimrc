@@ -63,6 +63,7 @@ Plugin 'The-NERD-Commenter'
 Plugin 'FuzzyFinder'
 Plugin 'cscope.vim'
 Plugin 'AutoComplPop'
+Plugin 'kergoth/vim-bitbake'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
