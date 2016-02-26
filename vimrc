@@ -9,10 +9,9 @@ set shiftwidth=4
 set mouse=a
 color synic
 
-<<<<<<< HEAD
 " ctags
 set tags=./tags;../tags;../../tags;../../../tags;../../../../tags;../../../../../tags;../../../../../../tags;../../../../../../../tags
-=======
+
 " cscope
 set csprg=/usr/bin/cscope 
 set csto=0 
@@ -24,7 +23,6 @@ else
 	cs add /usr/src/linux/cscope.out  
 endif                                  
 set csverb
->>>>>>> 285c1b3e89e8f2437827d8a87a19ed1f86c202cf
 
 " NERDTree
 let NERDTreeWinPos = "left"
