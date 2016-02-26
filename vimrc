@@ -9,6 +9,9 @@ set shiftwidth=4
 set mouse=a
 color synic
 
+" ctags
+set tags=./tags;../tags;../../tags;../../../tags;../../../../tags;../../../../../tags;../../../../../../tags;../../../../../../../tags
+
 " NERDTree
 let NERDTreeWinPos = "left"
 nmap <F9> :NERDTree<CR>
@@ -67,4 +70,3 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 "
-
