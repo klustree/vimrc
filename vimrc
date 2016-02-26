@@ -9,8 +9,22 @@ set shiftwidth=4
 set mouse=a
 color synic
 
+<<<<<<< HEAD
 " ctags
 set tags=./tags;../tags;../../tags;../../../tags;../../../../tags;../../../../../tags;../../../../../../tags;../../../../../../../tags
+=======
+" cscope
+set csprg=/usr/bin/cscope 
+set csto=0 
+set cst 
+set nocsverb 
+if filereadable("./cscope.out")       
+	cs add cscope.out                 
+else                                  
+	cs add /usr/src/linux/cscope.out  
+endif                                  
+set csverb
+>>>>>>> 285c1b3e89e8f2437827d8a87a19ed1f86c202cf
 
 " NERDTree
 let NERDTreeWinPos = "left"
@@ -54,6 +68,7 @@ Plugin 'The-NERD-Commenter'
 Plugin 'FuzzyFinder'
 Plugin 'cscope.vim'
 Plugin 'AutoComplPop'
+Plugin 'kergoth/vim-bitbake'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
