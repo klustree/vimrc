@@ -11,7 +11,7 @@ set mouse=a
 color synic
 
 " ctags
-set tags=./tags;../tags;../../tags;../../../tags;../../../../tags;../../../../../tags;../../../../../../tags;../../../../../../../tags
+set tags=./tags,../tags,../../tags,../../../tags,../../../../tags,../../../../../tags,../../../../../../tags,../../../../../../../tags
 
 " cscope
 set csprg=/usr/bin/cscope 
@@ -21,7 +21,7 @@ set nocsverb
 if filereadable("./cscope.out")       
 	cs add cscope.out                 
 else                                  
-	cs add /usr/src/linux/cscope.out  
+	cs add /usr/src/system('uname -r')/cscope.out  
 endif                                  
 set csverb
 
@@ -65,10 +65,11 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plugin 'The-NERD-tree'
 Plugin 'The-NERD-Commenter'
 Plugin 'FuzzyFinder'
-Plugin 'cscope.vim'
+"Plugin 'ctags.vim'
+"Plugin 'cscope.vim'
 Plugin 'AutoComplPop'
-Plugin 'kergoth/vim-bitbake'
 Plugin 'DoxygenToolkit.vim'
+Plugin 'sudo.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
